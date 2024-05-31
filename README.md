@@ -14,7 +14,7 @@ Install macOS in VirtualBox on Windows PC [Intel & AMD]: https://www.youtube.com
 
 After instaling Mac **Big Sur 11** on our VM in Window PC we can upgrade it to Mac **Sonoma 14** 
 
-## 2. How to install XCode in Mac 
+## 2. How to install XCode 15 in Mac 
 
 
 
