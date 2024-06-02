@@ -1,4 +1,4 @@
-# iOS  SwiftUI training
+# iOS  SwiftUI lesson
 
 https://github.com/ArisGuimera/iOS-Expert
 
