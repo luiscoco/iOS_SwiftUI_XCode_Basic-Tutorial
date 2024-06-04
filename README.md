@@ -28,15 +28,43 @@ After instaling Mac **Big Sur 11** on our VM in Window PC we can upgrade it to M
 
 ### 2.1. My First Application with SwiftUI
 
-
 See **myfirstapp** code
+
+```swift
+import SwiftUI
+
+@main
+struct myfirstappApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
 
 ![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/7c708ee9-26f0-4fa1-8845-280c0f14c03c)
 
 See the **ContentView** code
 
 ```swift
+import SwiftUI
 
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundStyle(.tint)
+            Text("Hello, world!")
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    ContentView()
+}
 ```
 
 ![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/76c521bf-63c5-4022-819a-b288884a17a2)
