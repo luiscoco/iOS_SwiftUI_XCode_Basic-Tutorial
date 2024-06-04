@@ -126,7 +126,52 @@ struct CounterApp: App {
 }
 ```
 
-### 2.3. 
+### 2.3. TodoList App
+
+This app demonstrates how to use lists and manage data with a simple todo list
+
+```swift
+import SwiftUI
+
+struct TodoItem: Identifiable {
+    let id = UUID()
+    let title: String
+}
+
+struct ContentView: View {
+    @State private var items = [TodoItem]()
+    @State private var newItemTitle = ""
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                HStack {
+                    TextField("New item", text: $newItemTitle)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
+                    
+                    Button(action: {
+                        let newItem = TodoItem(title: newItemTitle)
+                        items.append(newItem)
+                        newItemTitle = ""
+                    }) {
+                        Text("Add")
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                }
+                
+                List(items) { item in
+                    Text(item.title)
+                }
+            }
+            .navigationTitle("Todo List")
+        }
+    }
+}
+```
 
 
 
