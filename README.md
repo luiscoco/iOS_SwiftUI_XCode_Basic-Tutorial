@@ -10,6 +10,8 @@ This means that instead of writing code to control every little action, you simp
 
 https://en.wikipedia.org/wiki/SwiftUI
 
+https://www.hackingwithswift.com/quick-start/swiftui/what-is-swiftui
+
 https://developer.apple.com/tutorials/swiftui-concepts
 
 https://developer.apple.com/tutorials/swiftui
