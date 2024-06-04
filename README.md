@@ -1,4 +1,4 @@
-![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/0d0911f7-3976-4831-83b9-01501898820d)# iOS  SwiftUI lesson1
+# iOS  SwiftUI lesson1
 
 https://developer.apple.com/tutorials/swiftui-concepts
 
