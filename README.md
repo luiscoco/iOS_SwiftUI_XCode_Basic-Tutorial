@@ -59,8 +59,6 @@ struct myfirstappApp: App {
 }
 ```
 
-![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/7c708ee9-26f0-4fa1-8845-280c0f14c03c)
-
 See the **ContentView** code
 
 ```swift
@@ -82,8 +80,6 @@ struct ContentView: View {
     ContentView()
 }
 ```
-
-![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/76c521bf-63c5-4022-819a-b288884a17a2)
 
 ### 2.2. Simple Counter App (State management)
 
