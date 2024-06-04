@@ -77,7 +77,9 @@ This is the application running in the IPhone simulator
 
 ### 2.2. Simple Counter App
 
-This app will help you understand the basics of state management in SwiftUI.
+This app will help you understand the basics of **state management** in SwiftUI
+
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/89c7e5c8-fae0-4905-aa9f-9858ce9dacdd)
 
 ```swift
 import SwiftUI
