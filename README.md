@@ -1,4 +1,6 @@
-# iOS  SwiftUI lesson1
+# SwiftUI lesson1 
+
+https://en.wikipedia.org/wiki/SwiftUI
 
 https://developer.apple.com/tutorials/swiftui-concepts
 
