@@ -29,6 +29,12 @@ After instaling Mac **Big Sur 11** on our VM in Window PC we can upgrade it to M
 ### 2.1. My First Application with SwiftUI
 
 
+See the **ContentView** code
+
+```swift
+
+```
+
 ![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/76c521bf-63c5-4022-819a-b288884a17a2)
 
 
