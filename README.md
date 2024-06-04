@@ -26,8 +26,13 @@ After instaling Mac **Big Sur 11** on our VM in Window PC we can upgrade it to M
 
 ## 2. Learning by doing applications
 
+### 2.1. My First Application with SwiftUI
 
-### 2.1. Simple Counter App
+
+
+
+### 2.2. Simple Counter App
+
 This app will help you understand the basics of state management in SwiftUI.
 
 ```swift
@@ -79,11 +84,11 @@ struct CounterApp: App {
 }
 ```
 
-### 2.2. 
-
-
-
 ### 2.3. 
+
+
+
+### 2.4. 
 
 
 
