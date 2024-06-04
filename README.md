@@ -43,7 +43,7 @@ See the **ContentView** code
 
 This is the application running in the IPhone simulator 
 
-![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/295ba376-5cc5-44f8-b878-83ee02df0d8d)
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/121bb917-9bbd-49ed-9327-898c300869ea)
 
 
 
