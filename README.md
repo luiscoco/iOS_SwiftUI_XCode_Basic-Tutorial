@@ -1,4 +1,4 @@
-# iOS  SwiftUI lesson1
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/0d0911f7-3976-4831-83b9-01501898820d)# iOS  SwiftUI lesson1
 
 https://developer.apple.com/tutorials/swiftui-concepts
 
@@ -129,6 +129,8 @@ struct CounterApp: App {
 ### 2.3. TodoList App
 
 This app demonstrates how to use lists and manage data with a simple todo list
+
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/e2a76bee-4aa5-4280-ad57-e77b5db9e31a)
 
 ```swift
 import SwiftUI
