@@ -175,19 +175,20 @@ struct ContentView: View {
 }
 ```
 
+### 2.4. Weather App
 
+This app shows how to fetch and display data from a web API. For simplicity, we will use mock data
 
-### 2.4. 
-
-
-
-
-### 2.4. 
-
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/2d22aa93-a590-4e69-b663-6cf4173a1ebb)
 
 
 
 ### 2.5. 
+
+
+
+
+### 2.6. 
 
 
 
