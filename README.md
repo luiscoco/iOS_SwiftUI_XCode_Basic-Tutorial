@@ -71,7 +71,7 @@ struct ContentView: View {
 
 ![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/76c521bf-63c5-4022-819a-b288884a17a2)
 
-### 2.2. Simple Counter App
+### 2.2. Simple Counter App (State management)
 
 This app will help you understand the basics of **state management** in SwiftUI
 
@@ -126,7 +126,7 @@ struct CounterApp: App {
 }
 ```
 
-### 2.3. TodoList App
+### 2.3. TodoList App (List)
 
 This app demonstrates how to use lists and manage data with a simple todo list
 
@@ -175,7 +175,7 @@ struct ContentView: View {
 }
 ```
 
-### 2.4. Weather App
+### 2.4. Weather App (Fetch mock data)
 
 This app shows how to fetch and display data from a web API. For simplicity, we will use mock data
 
