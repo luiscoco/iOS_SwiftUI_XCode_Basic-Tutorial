@@ -29,6 +29,10 @@ After instaling Mac **Big Sur 11** on our VM in Window PC we can upgrade it to M
 ### 2.1. My First Application with SwiftUI
 
 
+See **myfirstapp** code
+
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/7c708ee9-26f0-4fa1-8845-280c0f14c03c)
+
 See the **ContentView** code
 
 ```swift
@@ -36,6 +40,11 @@ See the **ContentView** code
 ```
 
 ![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/76c521bf-63c5-4022-819a-b288884a17a2)
+
+This is the application running in the IPhone simulator 
+
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/295ba376-5cc5-44f8-b878-83ee02df0d8d)
+
 
 
 ### 2.2. Simple Counter App
