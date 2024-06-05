@@ -4,27 +4,7 @@
 
 **SwiftUI** is a new way to **build user interfaces UIs** for apps on Apple platforms using **Swift** code
 
-**SwiftUI** which is a **declarative framework**
-
-This means that instead of writing code to control every little action, you simply tell SwiftUI **what** you want and then let the framework do it for you
-
-https://en.wikipedia.org/wiki/SwiftUI
-
-https://developer.apple.com/tutorials/swiftui-concepts
-
-https://developer.apple.com/tutorials/swiftui
-
-https://developer.apple.com/tutorials/sample-apps
-
-https://github.com/ArisGuimera/iOS-Expert
-
-https://www.hackingwithswift.com/quick-start/swiftui
-
-https://www.youtube.com/watch?v=f6WtmTBFNGM&t=10376s
-
-**CURSO: SWIFT y SWIFTUI desde CERO en ESPAÑOL - Programación IOS - TUTORIAL XCODE**:
-
-https://www.youtube.com/watch?v=f6WtmTBFNGM&list=PL8ie04dqq7_MeCR8iYIy_eumrYK7JzuPJ
+**SwiftUI** which is a **declarative framework**. This means that instead of writing code to control every little action, you simply tell SwiftUI **what** you want and then let the framework do it for you
 
 ## 1. Prerequisites
 
@@ -202,4 +182,22 @@ This app shows how to fetch and display data from a web API. For simplicity, we 
 
 
 
-## 3. 
+## 3. Additional information
+
+https://en.wikipedia.org/wiki/SwiftUI
+
+https://developer.apple.com/tutorials/swiftui-concepts
+
+https://developer.apple.com/tutorials/swiftui
+
+https://developer.apple.com/tutorials/sample-apps
+
+https://github.com/ArisGuimera/iOS-Expert
+
+https://www.hackingwithswift.com/quick-start/swiftui
+
+https://www.youtube.com/watch?v=f6WtmTBFNGM&t=10376s
+
+**CURSO: SWIFT y SWIFTUI desde CERO en ESPAÑOL - Programación IOS - TUTORIAL XCODE**:
+
+https://www.youtube.com/watch?v=f6WtmTBFNGM&list=PL8ie04dqq7_MeCR8iYIy_eumrYK7JzuPJ
