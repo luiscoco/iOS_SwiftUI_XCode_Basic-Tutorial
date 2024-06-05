@@ -1,4 +1,4 @@
-# SwiftUI - Basic tutorial 
+# SwiftUI - Brief Introduction with Samples 
 
 **Apple iOS** is the **operating system** for iPhone, iPad, and other Apple **mobile devices**
 
