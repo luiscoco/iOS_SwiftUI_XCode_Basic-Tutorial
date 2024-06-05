@@ -12,7 +12,7 @@ SwiftUI which is a **declarative framework** you simply tell SwiftUI **what** yo
 
 
 
-## 1.2. How to install XCode 15 in Mac 
+### 1.2. How to install XCode 15 in Mac 
 
 
 
