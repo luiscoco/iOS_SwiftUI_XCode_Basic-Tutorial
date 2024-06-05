@@ -10,7 +10,7 @@ SwiftUI which is a **declarative framework** you simply tell SwiftUI **what** yo
 
 ### 1.1. How to create a Virtual Machine with VirtuaBox for installing Mac Sonoma
 
-
+See this github repo for a detailed explanation: https://github.com/luiscoco/macOS_Sonoma_VMWare/tree/main
 
 ### 1.2. How to install XCode 15 in Mac 
 
