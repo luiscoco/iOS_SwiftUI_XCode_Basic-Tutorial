@@ -2,7 +2,7 @@
 
 **Apple iOS** is the **operating system** for iPhone, iPad, and other Apple **mobile devices**
 
-**SwiftUI** is a new way to **build user interfaces UIs** for apps on Apple platforms using **Swift** code
+SwiftUI is a new way to **build user interfaces UIs** for apps on Apple platforms using Swift code
 
 **SwiftUI** which is a **declarative framework**. This means that instead of writing code to control every little action, you simply tell SwiftUI **what** you want and then let the framework do it for you
 
