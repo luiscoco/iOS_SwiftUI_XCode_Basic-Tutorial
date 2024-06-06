@@ -308,6 +308,8 @@ struct AnimatedCircleApp: App {
 
 ### 2.7. Custom Views
 
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_Basic-Tutorial/assets/32194879/1529aa86-a12c-42fb-ad8a-582b36b15973)
+
 ```swift
 import SwiftUI
 
