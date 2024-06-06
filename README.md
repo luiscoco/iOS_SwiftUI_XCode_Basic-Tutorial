@@ -303,13 +303,114 @@ struct AnimatedCircleApp: App {
 
 ### 2.7. Custom Views
 
+```swift
+import SwiftUI
 
+struct CustomCardView: View {
+    var title: String
+    var subtitle: String
+    var backgroundColor: Color
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(title)
+                .font(.headline)
+                .foregroundColor(.white)
+            
+            Text(subtitle)
+                .font(.subheadline)
+                .foregroundColor(.white)
+        }
+        .padding()
+        .background(backgroundColor)
+        .cornerRadius(10)
+        .shadow(radius: 5)
+    }
+}
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            CustomCardView(title: "Card 1", subtitle: "This is the first card", backgroundColor: .blue)
+            CustomCardView(title: "Card 2", subtitle: "This is the second card", backgroundColor: .green)
+            CustomCardView(title: "Card 3", subtitle: "This is the third card", backgroundColor: .red)
+        }
+        .padding()
+    }
+}
+
+@main
+struct CustomViewsApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
 
 
 
 ### 2.8. Networking with URLSession
 
+```swift
+import SwiftUI
 
+struct Post: Codable, Identifiable {
+    let id: Int
+    let title: String
+    let body: String
+}
+
+struct ContentView: View {
+    @State private var posts = [Post]()
+    
+    var body: some View {
+        NavigationView {
+            List(posts) { post in
+                VStack(alignment: .leading) {
+                    Text(post.title)
+                        .font(.headline)
+                    Text(post.body)
+                        .font(.subheadline)
+                }
+            }
+            .navigationTitle("Posts")
+            .onAppear {
+                fetchPosts()
+            }
+        }
+    }
+    
+    func fetchPosts() {
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let data = data {
+                do {
+                    let decodedPosts = try JSONDecoder().decode([Post].self, from: data)
+                    DispatchQueue.main.async {
+                        self.posts = decodedPosts
+                    }
+                } catch {
+                    print("Error decoding data: \(error)")
+                }
+            }
+        }.resume()
+    }
+}
+
+@main
+struct NetworkingApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
 
 
 
@@ -317,7 +418,98 @@ struct AnimatedCircleApp: App {
 ### 2.9. Using Core Data
 
 
+```swift
+import SwiftUI
+import CoreData
 
+struct ContentView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+    @FetchRequest(entity: Item.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)])
+    private var items: FetchedResults<Item>
+
+    @State private var newItemTitle = ""
+
+    var body: some View {
+        NavigationView {
+            VStack {
+                TextField("New item", text: $newItemTitle)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+
+                Button(action: addItem) {
+                    Text("Add")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+
+                List {
+                    ForEach(items) { item in
+                        Text(item.title ?? "Untitled")
+                    }
+                    .onDelete(perform: deleteItems)
+                }
+            }
+            .navigationTitle("Core Data Items")
+        }
+    }
+
+    private func addItem() {
+        withAnimation {
+            let newItem = Item(context: viewContext)
+            newItem.timestamp = Date()
+            newItem.title = newItemTitle
+            newItemTitle = ""
+
+            do {
+                try viewContext.save()
+            } catch {
+                // Handle error
+            }
+        }
+    }
+
+    private func deleteItems(offsets: IndexSet) {
+        withAnimation {
+            offsets.map { items[$0] }.forEach(viewContext.delete)
+
+            do {
+                try viewContext.save()
+            } catch {
+                // Handle error
+            }
+        }
+    }
+}
+
+@main
+struct CoreDataApp: App {
+    let persistenceController = PersistenceController.shared
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        }
+    }
+}
+
+struct PersistenceController {
+    static let shared = PersistenceController()
+
+    let container: NSPersistentContainer
+
+    init() {
+        container = NSPersistentContainer(name: "YourModelName")
+        container.loadPersistentStores { storeDescription, error in
+            if let error = error as NSError? {
+                // Handle error
+            }
+        }
+    }
+}
+```
 
 
 
