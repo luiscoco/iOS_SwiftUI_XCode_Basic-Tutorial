@@ -216,6 +216,7 @@ struct WeatherApp: App {
 
 ### 2.5. Form and Data Binding
 
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_Basic-Tutorial/assets/32194879/78741189-3aa1-442d-a179-d06ea54e0bfe)
 
 ```swift
 import SwiftUI
