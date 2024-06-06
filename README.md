@@ -221,7 +221,7 @@ struct WeatherApp: App {
 ```swift
 import SwiftUI
 
-struct UserSettings: View {
+struct ContentView : View {
     @State private var username: String = ""
     @State private var notificationsEnabled: Bool = true
     @State private var selectedColor: Color = .blue
