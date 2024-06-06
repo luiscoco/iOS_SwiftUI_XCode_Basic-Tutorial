@@ -171,14 +171,38 @@ This app shows how to fetch and display data from a web API. For simplicity, we 
 
 ![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/2d22aa93-a590-4e69-b663-6cf4173a1ebb)
 
-
-
-### 2.5. 
+### 2.5. Form and Data Binding
 
 
 
 
-### 2.6. 
+### 2.6. Animation
+
+
+
+
+### 2.7. Custom Views
+
+
+
+
+
+### 2.8. Networking with URLSession
+
+
+
+
+
+
+### 2.9. Using Core Data
+
+
+
+
+
+
+
+
 
 
 
