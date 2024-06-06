@@ -272,7 +272,7 @@ struct UserSettingsApp: App {
 ```swift
 import SwiftUI
 
-struct AnimatedCircle: View {
+struct ContentView : View {
     @State private var isExpanded = false
     
     var body: some View {
