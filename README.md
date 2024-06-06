@@ -14,7 +14,7 @@ See this github repo for a detailed explanation: https://github.com/luiscoco/mac
 
 ### 1.2. How to install XCode 15 in Mac 
 
-
+See this youtube video: https://www.youtube.com/watch?v=F6QZ2atZrDw&t=90s
 
 ## 2. Learning by doing applications
 
