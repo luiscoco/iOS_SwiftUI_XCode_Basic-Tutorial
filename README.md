@@ -356,9 +356,9 @@ struct CustomViewsApp: App {
 }
 ```
 
-
-
 ### 2.8. Networking with URLSession
+
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_Basic-Tutorial/assets/32194879/18552ce5-cbf5-4bed-8af9-4e5b616e0a8d)
 
 ```swift
 import SwiftUI
@@ -418,9 +418,6 @@ struct NetworkingApp: App {
     }
 }
 ```
-
-
-
 
 ### 2.9. Using Core Data
 
