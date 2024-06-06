@@ -171,14 +171,134 @@ This app shows how to fetch and display data from a web API. For simplicity, we 
 
 ![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_lesson1/assets/32194879/2d22aa93-a590-4e69-b663-6cf4173a1ebb)
 
+```swift
+import SwiftUI
+
+struct Weather: Identifiable {
+    let id = UUID()
+    let day: String
+    let temperature: Int
+}
+
+struct ContentView: View {
+    let weatherData = [
+        Weather(day: "Monday", temperature: 22),
+        Weather(day: "Tuesday", temperature: 25),
+        Weather(day: "Wednesday", temperature: 19),
+        Weather(day: "Thursday", temperature: 23),
+        Weather(day: "Friday", temperature: 21)
+    ]
+    
+    var body: some View {
+        NavigationView {
+            List(weatherData) { weather in
+                VStack(alignment: .leading) {
+                    Text(weather.day)
+                        .font(.headline)
+                    Text("\(weather.temperature)°C")
+                        .font(.subheadline)
+                }
+            }
+            .navigationTitle("Weather Forecast")
+        }
+    }
+}
+
+@main
+struct WeatherApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+```
+
 ### 2.5. Form and Data Binding
 
 
+```swift
+import SwiftUI
+
+struct UserSettings: View {
+    @State private var username: String = ""
+    @State private var notificationsEnabled: Bool = true
+    @State private var selectedColor: Color = .blue
+    
+    var body: some View {
+        NavigationView {
+            Form {
+                Section(header: Text("Profile")) {
+                    TextField("Username", text: $username)
+                }
+                
+                Section(header: Text("Preferences")) {
+                    Toggle("Enable Notifications", isOn: $notificationsEnabled)
+                    
+                    ColorPicker("Favorite Color", selection: $selectedColor)
+                }
+                
+                Section {
+                    Button(action: {
+                        // Handle save action
+                    }) {
+                        Text("Save")
+                    }
+                }
+            }
+            .navigationTitle("Settings")
+        }
+    }
+}
+
+@main
+struct UserSettingsApp: App {
+    var body: some Scene {
+        WindowGroup {
+            UserSettings()
+        }
+    }
+}
+```
 
 
 ### 2.6. Animation
 
+```swift
+import SwiftUI
 
+struct AnimatedCircle: View {
+    @State private var isExpanded = false
+    
+    var body: some View {
+        VStack {
+            Circle()
+                .frame(width: isExpanded ? 200 : 100, height: isExpanded ? 200 : 100)
+                .foregroundColor(isExpanded ? .green : .blue)
+                .animation(.easeInOut(duration: 1), value: isExpanded)
+            
+            Button(action: {
+                isExpanded.toggle()
+            }) {
+                Text("Animate")
+                    .padding()
+                    .background(Color.black)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+        }
+    }
+}
+
+@main
+struct AnimatedCircleApp: App {
+    var body: some Scene {
+        WindowGroup {
+            AnimatedCircle()
+        }
+    }
+}
+```
 
 
 ### 2.7. Custom Views
