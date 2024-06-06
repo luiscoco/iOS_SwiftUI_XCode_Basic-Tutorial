@@ -265,6 +265,10 @@ struct UserSettingsApp: App {
 
 ### 2.6. Animation
 
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_Basic-Tutorial/assets/32194879/6311c3d0-de25-4123-adb7-c7896dc4932a)
+
+![image](https://github.com/luiscoco/iOS_SwiftUI_XCode_Basic-Tutorial/assets/32194879/9098de55-02b5-46ec-8597-cdaed29081a6)
+
 ```swift
 import SwiftUI
 
